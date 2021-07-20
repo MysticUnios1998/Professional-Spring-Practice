@@ -10,7 +10,7 @@ import org.mapstruct.Mappings;
 import co.edu.platzi.spring.domain.Product;
 import co.edu.platzi.spring.persistence.entity.Producto;
 
-@Mapper(componentModel = "spring", uses = {CategoryMapper.class})
+@Mapper(componentModel="spring", uses={CategoryMapper.class})
 public interface ProductMapper {
     @Mappings({
             @Mapping(source = "productoID", target = "productId"),

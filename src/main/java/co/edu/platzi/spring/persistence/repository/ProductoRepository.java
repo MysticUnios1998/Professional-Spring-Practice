@@ -23,8 +23,8 @@ public class ProductoRepository implements ProductRepository {
 	private ProductMapper productMapper;
 	
 	@Override
-	public Optional<Product> getProductById(int Id){
-		return productoCrudRepository.findById(null).map(productMapper::toProduct);
+	public Optional<Product> getProductById(int id){
+		return productoCrudRepository.findById(id).map(productMapper::toProduct);
 	}
 	
 	@Override
