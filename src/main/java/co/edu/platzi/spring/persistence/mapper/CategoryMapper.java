@@ -5,7 +5,7 @@ import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.Mappings;
 
-import co.edu.platzi.spring.domain.Category;
+import co.edu.platzi.spring.domain.dto.Category;
 import co.edu.platzi.spring.persistence.entity.Categoria;
 
 @Mapper(componentModel="spring")

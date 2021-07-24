@@ -3,7 +3,7 @@ package co.edu.platzi.spring.domain.repository;
 import java.util.List;
 import java.util.Optional;
 
-import co.edu.platzi.spring.domain.Product;
+import co.edu.platzi.spring.domain.dto.Product;
 
 public interface ProductRepository {
 

@@ -3,6 +3,7 @@ package co.edu.platzi.spring.persistence.entity;
 import java.time.LocalDateTime;
 import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -24,7 +25,7 @@ public class Compra {
 	
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	@Column(name="id_columna")
+	@Column(name="id_compra")
 	private Integer compraID;
 	
 	@Column(name="id_cliente")
@@ -34,7 +35,7 @@ public class Compra {
 	private LocalDateTime fecha;
 	
 	@Column(name="medio_pago")
-	private String MedioPago;
+	private String medioPago;
 	
 	private String comentario;
 	
@@ -44,7 +45,7 @@ public class Compra {
 	@JoinColumn(name="id_cliente", insertable=false, updatable=false)
 	private Cliente cliente;
 	
-	@OneToMany(mappedBy="producto")
+	@OneToMany(mappedBy="compra", cascade={CascadeType.ALL})
 	private List<ComprasProducto> productos;
 
 }

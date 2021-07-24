@@ -1,4 +1,4 @@
-package co.edu.platzi.spring.domain;
+package co.edu.platzi.spring.domain.dto;
 
 import lombok.Getter;
 import lombok.Setter;

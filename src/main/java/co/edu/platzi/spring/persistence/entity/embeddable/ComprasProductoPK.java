@@ -8,15 +8,11 @@ import javax.persistence.Embeddable;
 import lombok.Getter;
 import lombok.Setter;
 
+@SuppressWarnings("serial")
 @Embeddable
 
 @Getter @Setter
 public class ComprasProductoPK implements Serializable{
-
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 3437497932046993799L;
 	
 	@Column(name="id_compra")
 	private Integer compraID;

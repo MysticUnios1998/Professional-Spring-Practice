@@ -6,6 +6,7 @@ import javax.persistence.EmbeddedId;
 import javax.persistence.Entity;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.MapsId;
 import javax.persistence.Table;
 
 import co.edu.platzi.spring.persistence.entity.embeddable.ComprasProductoPK;
@@ -28,6 +29,7 @@ public class ComprasProducto {
 	private Boolean estado;
 	
 	@ManyToOne
+	@MapsId("compraID")
 	@JoinColumn(name="id_compra", insertable=false, updatable=false)
 	private Compra compra;
 	

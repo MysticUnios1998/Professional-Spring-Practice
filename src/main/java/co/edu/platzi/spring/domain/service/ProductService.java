@@ -6,7 +6,7 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import co.edu.platzi.spring.domain.Product;
+import co.edu.platzi.spring.domain.dto.Product;
 import co.edu.platzi.spring.domain.repository.ProductRepository;
 
 @Service

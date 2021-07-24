@@ -6,7 +6,7 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-import co.edu.platzi.spring.domain.Product;
+import co.edu.platzi.spring.domain.dto.Product;
 import co.edu.platzi.spring.domain.repository.ProductRepository;
 import co.edu.platzi.spring.persistence.crud.ProductoCrudRepository;
 import co.edu.platzi.spring.persistence.entity.Producto;
