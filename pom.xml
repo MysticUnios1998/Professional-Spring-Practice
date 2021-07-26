@@ -6,7 +6,7 @@
 
   <groupId>co.edu.platzi</groupId>
   <artifactId>platzi-spring</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>1.0.0</version>
 
   <name>platzi-spring</name>
   <!-- FIXME change it to the project's website -->
